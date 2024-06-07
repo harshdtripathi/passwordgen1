@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <div class="container mx-auto bg-cover  ">
+        <div class="font-bold pb-6 mr-7 heading ">
+            <h1 class="font-bold text-3xl text-white opacity-[0.75] text-center password">PASSWORD GENERATOR</h1>
+        </div>
+       
+            <div class=" display-container mb-2 justify-center mt-1 ">
+                <input   readonly placeholder="Password  "
+                    class="display relative rounded-[1rem] p-[0.35] border-b-0.75 bg-purple-950 m-[1rem] w-[300px] h-[45px] ml-0 pl-3  text-[17px] mb-3 mt-3 font-medium"
+                    datapassworddisplay>
+                <button class="data" data-copyBtn>
+                    <span data-copyMsg></span>
+                    <div class="cpybutton">
+                        <img class="bg-none bg-slate-700 rounded-md mr-2 h-8 w-8 " src="../unwrap/icons8-copy-24(1).png">
+                    </div>
+
+                </button>
+            </div>
+
+
+            <div class="main-content relative  ">
+                <div class="length-cntainer flex justify-between">
+                    <h3 class="text-white font-mullish font-bold pl-3 pb-3 pt-0">Password Length</h3>
+                    <p class="text-yellow-200 font-mullish font-bold pr-7" data-length>0</p>
+                </div>
+                <div class="ml-3">
+                    <input class="mover"  type="range" min="0" max="15" data-lengthslider />
+                </div>
+                <div class="check ml-3 text-white font-semibold space-y-1 font-sans text-md mb-3 ">
+                    <label>
+                        <input type="checkbox" id="uppercase" name="interest" value="uppercase" />
+                        Include Uppercase Letters
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="lowercase" name="interest" value="lowercase" />
+                        Include Lowercase Letters
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="numbers" name="interest" value="numbers" />
+                        Include Numbers
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="symbols" name="interest" value="symbols" />
+                        include Symbols
+                    </label>
+
+                </div>
+                <div class="strength-container mb-4 ml-3  font-semibold text-md relative flex flex-row ">
+                    <h3 class="text-white">Strength</h3>
+                    <div class="colorchange absolute    "></div>
+
+                </div>
+                <div class="generateButton bg-pink-500  rounded-md">
+                    <button onclick="fillpassword()" class="text-yellow-300 font-semibold text-md " >
+                        Generate Password
+
+                    </button>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/876b42c968.js" crossorigin="anonymous"></script>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

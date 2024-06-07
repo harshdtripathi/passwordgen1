@@ -1,0 +1,199 @@
+*,
+*::before
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan',sans-serif;
+}
+
+
+
+.container{
+    background: linear-gradient(93deg, rgba(42, 131, 126, 0.88) 0%, rgba(22, 1, 56, 1) 53%, rgba(238, 130, 238, 1) 100%);
+   width:100vw ; 
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    
+}
+.display-container{
+    width: 25vw;
+    position: relative;
+    background-color:  rgb(31, 2, 31);
+    border-radius: 1rem;
+    border-bottom: 0.35 solid rgb(50, 9, 50);
+    margin: 1.5rem;
+    padding: 0.35rem;
+  box-shadow: 1px 5px 7px 2px rgba(0, 0, 255, .2);
+}
+.data{
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+   
+}
+
+.display-container::placeholder{
+    line-height: 30px;
+    color: rgb(142, 142, 40);
+    
+}
+.main-content{
+    background-color:  rgb(31, 2, 31);
+    width: 25.5vw;
+    border-radius: 1rem;
+    border-bottom: 0.35 solid rgb(50, 9, 50);
+    margin: 1rem;
+    padding: 0.35rem;
+    margin-left: 28px;
+    padding-top: 20px;
+    padding-bottom:60px ;
+    margin-top: 2px;
+}
+.mover{
+    color: purple;
+}
+.colorchange
+{
+    transform: translateX(322px);
+    margin-top: 0px;
+    margin-bottom: 2px;
+    margin-left: 4px;
+    position: absolute;
+  top: 30%;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 50%;
+
+
+}
+.generateButton{
+    width: 17vw;
+    position: absolute;
+   
+    height: 6vh;
+    margin-bottom: 80px;
+    transform: translateY(-50%);
+    margin-top: 20px;
+    margin-left: 60px;
+    padding-left: 60px;
+    padding-right: 30px;
+    padding-top:9px ;
+    margin-right: 50px;
+    box-shadow: 0px 5px 1px yellowgreen;
+    
+}
+@media (min-width: 350px) and (max-width: 849px) {
+     .main-content {
+        width: 94vw;
+        margin-left: 17px;
+    }
+    .display-container{
+        position: relative;
+        width: 94vw;
+        margin-left: 17px;
+
+    }
+    .display{
+        width: 345px;
+    }
+    .strength-container{
+        width: 94vw;
+    }
+
+    .data {
+        right: 1.2rem;
+    }
+
+    .generateButton {
+        width: 60vw;
+        margin-left: 10vw;
+        padding-left: 60px;
+        padding-right: 3px;
+        
+    }
+    .password{
+        display: inline;
+    }
+    
+    .heading{
+        font-size:small;
+     margin-left: auto;
+     margin-right: auto;
+       
+    
+    }
+   
+
+
+  
+   
+   
+  
+
+
+}
+    
+
+    
+
+
+
+@media (min-width: 844px) and (max-width: 1024px) {
+    .display-container  {
+          max-width: 100%;
+        margin-left: 0px;
+    }
+    .main-content{
+        width: 50vw;
+        margin-left: 0;
+    }
+
+    .data {
+        right: 1.3rem;
+    }
+
+    .generateButton {
+        width: 40vw;
+        margin-left: 30vw;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .heading{
+        font-size:medium;
+     margin-left: auto;
+     margin-right: auto;
+       
+    
+    }
+    .strength-container{
+        width: 50vw;
+    }
+    
+  
+}
+
+/* Media query for devices with width 1025px to 1080px */
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .display-container, .main-content {
+        width: 30vw;
+        margin-left: 0;
+    }
+
+    .data {
+        right: 1.4rem;
+    }
+
+    .generateButton {
+        width: 30vw;
+        margin-left: 35vw;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+}
